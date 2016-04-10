@@ -34,7 +34,7 @@ gulp.task('inject', function(){
   return gulp.src('./src/views/*.html')
   .pipe(wiredep(options))
   .pipe(inject(injectSrc, injectOptions))
-  .pipe(gulp.dest('.src/views'));
+  .pipe(gulp.dest('./src/views'));
 });
 
 gulp.task('serve', ['style', 'inject'], function() {
